@@ -30,6 +30,10 @@ hr {
     margin-bottom: 27px;
 }
 
+.players, .blogs, .courses {
+    justify-items: center;
+}
+
 /* top players style */
 
 .top-players {
@@ -172,18 +176,17 @@ hr {
         flex-direction: column;
         align-items: center;
     }
-    .blog-info{
+    .blog-info {
         margin-left: 0;
     }
-    .blog-author{
+    .blog-author {
         text-align: center;
     }
     .section-title {
         margin-bottom: 40px;
         text-align: center;
     }
-
-    .courses{
+    .courses {
         grid-row-gap: 24px;
     }
 }
