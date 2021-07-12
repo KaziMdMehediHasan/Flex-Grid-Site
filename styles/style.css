@@ -166,23 +166,48 @@ hr {
     }
     .players, .blogs, .courses {
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
     .player, .blog {
         flex-direction: column;
+        align-items: center;
+    }
+    .blog-info{
+        margin-left: 0;
+    }
+    .blog-author{
+        text-align: center;
+    }
+    .section-title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .courses{
+        grid-row-gap: 24px;
     }
 }
 
 /* Tablet devices */
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
-    .container{
+    .container {
         width: 100%;
     }
-    .players,.courses{
+    .players, .courses {
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
-
-    .blogs{
+    .blogs {
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .section-title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .courses {
+        grid-column-gap: 0;
+        grid-row-gap: 30px;
     }
 }
